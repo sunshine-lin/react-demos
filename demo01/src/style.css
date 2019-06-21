@@ -1,0 +1,49 @@
+.show{
+  animation: show-item 2s forwards;
+}
+.hide{
+  animation: hide-item 2s forwards;
+}
+@keyframes show-item {
+  0% {
+    opacity: 0;
+    color: red;
+  }
+  50% {
+    opacity: 0.5;
+    color: yellow;
+  }
+  100% {
+    opacity: 1;
+    color: blue;
+  }
+}
+
+@keyframes hide-item {
+  0% {
+    opacity: 0;
+    color: red;
+  }
+  50% {
+    opacity: 0.5;
+    color: yellow;
+  }
+  100% {
+    opacity: 1;
+    color: blue;
+  }
+}
+.my-node-enter {
+  opacity: 0;
+}
+.my-node-enter-active {
+  opacity: 1;
+  transition: opacity 200ms;
+}
+.my-node-exit {
+  opacity: 1;
+}
+.my-node-exit-active {
+  opacity: 0;
+  transition: opacity 200ms;
+}
